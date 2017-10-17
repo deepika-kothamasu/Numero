@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x"
+    ><![CDATA[
+    >
+
+    ]]>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="39dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="270dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"
+        tools:layout_editor_absoluteY="238dp"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="175dp"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/nsc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/nsc"
+        android:layout_width="185dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintLeft_toRightOf="@+id/score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        android:layout_marginStart="24dp" />
+
+
+
+        <com.example.deepu.myapplication.ProgressIndicator
+            android:id="@+id/determinate_progress_indicator4"
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/s2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintVertical_bias="0.293" />
+
+
+    <Button
+        android:id="@+id/z0"
+        android:layout_width="88dp"
+        android:layout_height="99dp"
+        android:background="@drawable/circle"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintRight_toLeftOf="@+id/s2"
+        app:layout_constraintLeft_toRightOf="@+id/o1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/o1"
+        android:layout_width="88dp"
+        android:layout_height="99dp"
+        android:background="@drawable/circle"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintRight_toLeftOf="@+id/z0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/s2"
+        android:layout_width="88dp"
+        android:layout_height="101dp"
+        android:background="@drawable/circle"
+        android:text="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintLeft_toRightOf="@+id/z0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

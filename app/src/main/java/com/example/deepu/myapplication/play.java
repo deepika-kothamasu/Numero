@@ -36,9 +36,9 @@ public class play extends AppCompatActivity {
         ques=(TextView) findViewById(R.id.question);
 
         mProgressIndicator4 = (ProgressIndicator) findViewById(R.id.determinate_progress_indicator4);
-        mProgressIndicator4.setForegroundColor(Color.parseColor("#000080"));//FFFAFA
+        mProgressIndicator4.setForegroundColor(Color.parseColor("#48D1CC"));//FFFAFA
         mProgressIndicator4.setBackgroundColor(Color.parseColor("#FFFAFA"));//000080
-        mProgressIndicator4.setPieStyle(true);
+
         t=new Thread(){
             @Override
             public void run(){
@@ -46,7 +46,14 @@ public class play extends AppCompatActivity {
                 {
                     try
                     {
-                        Thread.sleep(1000);
+                        if((uscore>=10)&&(nscore==0)){
+                        Thread.sleep(400);
+                        }
+                        else
+                        {
+                            Thread.sleep(1000);
+                        }
+
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
